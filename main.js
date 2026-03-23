@@ -29,3 +29,11 @@ button.addEventListener("click", () => {
         output.style.color = "red";
     }
 });
+
+const clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", () => {
+    input.value = "";
+    output.value = "";
+});
+output.style.color = "";
+input.focus();
